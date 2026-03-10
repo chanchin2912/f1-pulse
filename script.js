@@ -170,9 +170,11 @@ function mostrarDetalleCircuito(race) {
                 </div>
             </div>
         </div>
-        <div class="track-display">
-            <h3>MAPA DEL TRAZADO</h3>
-            <img src="${race.map}" alt="Mapa de ${race.circuit}" class="circuit-map-img" style="width:100%; max-width:400px; filter:invert(1); margin-top:10px;">
+        <div class="track-display" style="margin-top: 20px; text-align: center;">
+            <h3 style="color: #e10600; margin-bottom: 10px;">MAPA DEL TRAZADO</h3>
+            <div style="background: white; padding: 15px; border-radius: 10px; display: inline-block; width: 90%;">
+                <img src="${race.map}" alt="Mapa de ${race.circuit}" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 0 auto;">
+            </div>
         </div>`;
     document.getElementById('circuit-detail-modal').style.display = "block";
 }
