@@ -1,4 +1,4 @@
-// 1. Configuración de la fecha de carrera
+// 1. Configuración de la fecha de carrera (Próximo GP 2026)
 const raceDate = new Date("March 14, 2026 15:00:00").getTime();
 
 // 2. Datos de Neumáticos
@@ -20,31 +20,31 @@ const tyreData = {
     }
 };
 
-// 3. Datos del Calendario
+// 3. Calendario Completo 2026 (23 Carreras) con Mapas Reales
 const calendarData = [
-    { round: 1, name: "GP de Australia", date: "2026-03-15", circuit: "Albert Park", utcHour: 5, type: "Normal", flag: "🇦🇺" },
-    { round: 2, name: "GP de China", date: "2026-03-22", circuit: "Shanghai Int.", utcHour: 7, type: "Sprint", flag: "🇨🇳" },
-    { round: 3, name: "GP de Japón", date: "2026-04-05", circuit: "Suzuka", utcHour: 5, type: "Normal", flag: "🇯🇵" },
-    { round: 4, name: "GP de Baréin", date: "2026-04-19", circuit: "Sakhir", utcHour: 15, type: "Normal", flag: "🇧🇭" },
-    { round: 5, name: "GP de Miami", date: "2026-05-03", circuit: "Miami Intl", utcHour: 19, type: "Normal", flag: "🇺🇸" },
-    { round: 6, name: "GP de Emilia-Romaña", date: "2026-05-17", circuit: "Imola", utcHour: 13, type: "Normal", flag: "🇮🇹" },
-    { round: 7, name: "GP de Mónaco", date: "2026-05-24", circuit: "Monte Carlo", utcHour: 13, type: "Normal", flag: "🇲🇨" },
-    { round: 8, name: "GP de España", date: "2026-06-07", circuit: "Montmeló", utcHour: 13, type: "Normal", flag: "🇪🇸" },
-    { round: 9, name: "GP de Canadá", date: "2026-06-21", circuit: "Gilles Villeneuve", utcHour: 18, type: "Normal", flag: "🇨🇦" },
-    { round: 10, name: "GP de Austria", date: "2026-07-05", circuit: "Red Bull Ring", utcHour: 13, type: "Sprint", flag: "🇦🇹" },
-    { round: 11, name: "GP de Gran Bretaña", date: "2026-07-12", circuit: "Silverstone", utcHour: 14, type: "Normal", flag: "🇬🇧" },
-    { round: 12, name: "GP de Hungría", date: "2026-07-26", circuit: "Hungaroring", utcHour: 13, type: "Normal", flag: "🇭🇺" },
-    { round: 13, name: "GP de Bélgica", date: "2026-08-02", circuit: "Spa-Francorchamps", utcHour: 13, type: "Normal", flag: "🇧🇪" },
-    { round: 14, name: "GP de Países Bajos", date: "2026-08-30", circuit: "Zandvoort", utcHour: 13, type: "Normal", flag: "🇳🇱" },
-    { round: 15, name: "GP de Italia", date: "2026-09-06", circuit: "Monza", utcHour: 13, type: "Normal", flag: "🇮🇹" },
-    { round: 16, name: "GP de Azerbaiyán", date: "2026-09-20", circuit: "Baku City", utcHour: 11, type: "Normal", flag: "🇦🇿" },
-    { round: 17, name: "GP de Singapur", date: "2026-10-04", circuit: "Marina Bay", utcHour: 12, type: "Normal", flag: "🇸🇬" },
-    { round: 18, name: "GP de EE.UU.", date: "2026-10-25", circuit: "COTA", utcHour: 19, type: "Sprint", flag: "🇺🇸" },
-    { round: 19, name: "GP de México", date: "2026-11-01", circuit: "Hermanos Rodríguez", utcHour: 20, type: "Normal", flag: "🇲🇽" },
-    { round: 20, name: "GP de Brasil", date: "2026-11-15", circuit: "Interlagos", utcHour: 17, type: "Sprint", flag: "🇧🇷" },
-    { round: 21, name: "GP de Las Vegas", date: "2026-11-22", circuit: "Las Vegas Strip", utcHour: 6, type: "Normal", flag: "🇺🇸" },
-    { round: 22, name: "GP de Qatar", date: "2026-12-06", circuit: "Lusail", utcHour: 17, type: "Sprint", flag: "🇶🇦" },
-    { round: 23, name: "GP de Abu Dhabi", date: "2026-12-13", circuit: "Yas Marina", utcHour: 13, type: "Normal", flag: "🇦🇪" }
+    { round: 1, name: "GP de Australia", date: "2026-03-15", circuit: "Albert Park", utcHour: 5, type: "Normal", flag: "🇦🇺", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Albert_Park_Circuit_2021.svg/400px-Albert_Park_Circuit_2021.svg.png" },
+    { round: 2, name: "GP de China", date: "2026-03-22", circuit: "Shanghai Int.", utcHour: 7, type: "Sprint", flag: "🇨🇳", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Shanghai_International_Circuit-2005.svg/400px-Shanghai_International_Circuit-2005.svg.png" },
+    { round: 3, name: "GP de Japón", date: "2026-04-05", circuit: "Suzuka", utcHour: 5, type: "Normal", flag: "🇯🇵", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Suzuka_circuit_map--2005.svg/400px-Suzuka_circuit_map--2005.svg.png" },
+    { round: 4, name: "GP de Baréin", date: "2026-04-19", circuit: "Sakhir", utcHour: 15, type: "Normal", flag: "🇧🇭", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bahrain_International_Circuit--Grand_Prix_Layout.svg/400px-Bahrain_International_Circuit--Grand_Prix_Layout.svg.png" },
+    { round: 5, name: "GP de Miami", date: "2026-05-03", circuit: "Miami Intl", utcHour: 19, type: "Normal", flag: "🇺🇸", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Miami_International_Autodrome_layout.svg/400px-Miami_International_Autodrome_layout.svg.png" },
+    { round: 6, name: "GP de Emilia-Romaña", date: "2026-05-17", circuit: "Imola", utcHour: 13, type: "Normal", flag: "🇮🇹", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Imola_2009.svg/400px-Imola_2009.svg.png" },
+    { round: 7, name: "GP de Mónaco", date: "2026-05-24", circuit: "Monte Carlo", utcHour: 13, type: "Normal", flag: "🇲🇨", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Monte_Carlo_Formula_1_track_map.svg/400px-Monte_Carlo_Formula_1_track_map.svg.png" },
+    { round: 8, name: "GP de España", date: "2026-06-07", circuit: "Montmeló", utcHour: 13, type: "Normal", flag: "🇪🇸", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circuit_Catalunya.svg/400px-Circuit_Catalunya.svg.png" },
+    { round: 9, name: "GP de Canadá", date: "2026-06-21", circuit: "Gilles Villeneuve", utcHour: 18, type: "Normal", flag: "🇨🇦", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Circuit_Gilles_Villeneuve.svg/400px-Circuit_Gilles_Villeneuve.svg.png" },
+    { round: 10, name: "GP de Austria", date: "2026-07-05", circuit: "Red Bull Ring", utcHour: 13, type: "Sprint", flag: "🇦🇹", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Red_Bull_Ring.svg/400px-Red_Bull_Ring.svg.png" },
+    { round: 11, name: "GP de Gran Bretaña", date: "2026-07-12", circuit: "Silverstone", utcHour: 14, type: "Normal", flag: "🇬🇧", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Silverstone_Circuit_2020.svg/400px-Silverstone_Circuit_2020.svg.png" },
+    { round: 12, name: "GP de Hungría", date: "2026-07-26", circuit: "Hungaroring", utcHour: 13, type: "Normal", flag: "🇭🇺", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hungaroring-2003.svg/400px-Hungaroring-2003.svg.png" },
+    { round: 13, name: "GP de Bélgica", date: "2026-08-02", circuit: "Spa-Francorchamps", utcHour: 13, type: "Normal", flag: "🇧🇪", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Spa-Francorchamps_of_Belgium.svg/400px-Spa-Francorchamps_of_Belgium.svg.png" },
+    { round: 14, name: "GP de Países Bajos", date: "2026-08-30", circuit: "Zandvoort", utcHour: 13, type: "Normal", flag: "🇳🇱", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Zandvoort_Circuit.svg/400px-Zandvoort_Circuit.svg.png" },
+    { round: 15, name: "GP de Italia", date: "2026-09-06", circuit: "Monza", utcHour: 13, type: "Normal", flag: "🇮🇹", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Monza_Track_Map.svg/400px-Monza_Track_Map.svg.png" },
+    { round: 16, name: "GP de Azerbaiyán", date: "2026-09-20", circuit: "Baku City", utcHour: 11, type: "Normal", flag: "🇦🇿", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Baku_City_Circuit.svg/400px-Baku_City_Circuit.svg.png" },
+    { round: 17, name: "GP de Singapur", date: "2026-10-04", circuit: "Marina Bay", utcHour: 12, type: "Normal", flag: "🇸🇬", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marina_Bay_Street_Circuit_2023.svg/400px-Marina_Bay_Street_Circuit_2023.svg.png" },
+    { round: 18, name: "GP de EE.UU.", date: "2026-10-25", circuit: "COTA", utcHour: 19, type: "Sprint", flag: "🇺🇸", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_circuit.svg/400px-Austin_circuit.svg.png" },
+    { round: 19, name: "GP de México", date: "2026-11-01", circuit: "Hermanos Rodríguez", utcHour: 20, type: "Normal", flag: "🇲🇽", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hermanos_Rodriguez_2015.svg/400px-Hermanos_Rodriguez_2015.svg.png" },
+    { round: 20, name: "GP de Brasil", date: "2026-11-15", circuit: "Interlagos", utcHour: 17, type: "Sprint", flag: "🇧🇷", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Interlagos_track_map.svg/400px-Interlagos_track_map.svg.png" },
+    { round: 21, name: "GP de Las Vegas", date: "2026-11-22", circuit: "Las Vegas Strip", utcHour: 6, type: "Normal", flag: "🇺🇸", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Las_Vegas_Street_Circuit_2023_layout.svg/400px-Las_Vegas_Street_Circuit_2023_layout.svg.png" },
+    { round: 22, name: "GP de Qatar", date: "2026-12-06", circuit: "Lusail", utcHour: 17, type: "Sprint", flag: "🇶🇦", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lusail_International_Circuit_2021.svg/400px-Lusail_International_Circuit_2021.svg.png" },
+    { round: 23, name: "GP de Abu Dhabi", date: "2026-12-13", circuit: "Yas Marina", utcHour: 13, type: "Normal", flag: "🇦🇪", map: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Yas_Marina_Circuit.svg/400px-Yas_Marina_Circuit.svg.png" }
 ];
 
 // --- FUNCIONES ---
@@ -76,40 +76,57 @@ async function actualizarTablaF1() {
         const response = await fetch('https://api.jolpi.ca/ergast/f1/2026/driverStandings.json');
         const data = await response.json();
         const standings = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-        tableBody.innerHTML = '';
-        standings.forEach(item => {
-            const row = `
-                <tr>
-                    <td><strong>${item.position}</strong></td>
-                    <td>${item.Driver.givenName} ${item.Driver.familyName}</td>
-                    <td>${item.Constructors[0].name}</td>
-                    <td class="pts">${item.points}</td>
-                </tr>`;
-            tableBody.innerHTML += row;
-        });
+        tableBody.innerHTML = standings.map(item => `
+            <tr>
+                <td><strong>${item.position}</strong></td>
+                <td>${item.Driver.givenName} ${item.Driver.familyName}</td>
+                <td>${item.Constructors[0].name}</td>
+                <td class="pts">${item.points}</td>
+            </tr>`).join('');
     } catch (error) {
         tableBody.innerHTML = '<tr><td colspan="4">Error al conectar con el Paddock.</td></tr>';
+    }
+}
+
+async function actualizarConstructoresF1() {
+    const tableBody = document.getElementById('constructors-data');
+    if(!tableBody) return;
+    try {
+        const response = await fetch('https://api.jolpi.ca/ergast/f1/2026/constructorStandings.json');
+        const data = await response.json();
+        const standings = data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
+        tableBody.innerHTML = standings.map(item => {
+            const teamId = item.Constructor.constructorId;
+            const logoUrl = `https://media.formula1.com/content/dam/fom-website/teams/2024/${teamId}-logo.png`;
+            return `
+                <tr>
+                    <td><strong>${item.position}</strong></td>
+                    <td class="team-cell">
+                        <img src="${logoUrl}" alt="${item.Constructor.name}" class="team-logo" onerror="this.src='https://raw.githubusercontent.com/f1db/f1db/main/img/teams/generic.png'">
+                        <span class="team-name">${item.Constructor.name}</span>
+                    </td>
+                    <td>${item.Constructor.nationality}</td>
+                    <td class="pts">${item.points}</td>
+                </tr>`;
+        }).join('');
+    } catch (error) {
+        tableBody.innerHTML = '<tr><td colspan="4">Error al conectar con la fábrica.</td></tr>';
     }
 }
 
 function cargarCalendario() {
     const raceList = document.getElementById('race-list');
     if(!raceList) return;
-    raceList.innerHTML = '';
-    calendarData.forEach(race => {
-        const card = document.createElement('div');
-        card.className = 'race-card';
-        card.innerHTML = `
+    raceList.innerHTML = calendarData.map(race => `
+        <div class="race-card" onclick='mostrarDetalleCircuito(${JSON.stringify(race)})'>
             <div class="card-header">
                 <span class="round">R${race.round}</span>
                 <span class="flag-icon">${race.flag}</span>
             </div>
             <h3>${race.name}</h3>
             <p>${race.date}</p>
-            ${race.type === 'Sprint' ? '<span class="badge-sprint">SPRINT</span>' : ''}`;
-        card.onclick = () => mostrarDetalleCircuito(race);
-        raceList.appendChild(card);
-    });
+            ${race.type === 'Sprint' ? '<span class="badge-sprint">SPRINT</span>' : ''}
+        </div>`).join('');
 }
 
 function mostrarDetalleCircuito(race) {
@@ -140,7 +157,7 @@ function mostrarDetalleCircuito(race) {
         </div>
         <p class="circuit-name">🏟️ ${race.circuit}</p>
         <div class="schedule-section">
-            <h3>CRONOGRAMA</h3>
+            <h3><i class="fas fa-clock"></i> CRONOGRAMA DEL FIN DE SEMANA</h3>
             <div class="events-container">
                 ${eventosHTML}
                 <div class="event-row main-race">
@@ -152,6 +169,10 @@ function mostrarDetalleCircuito(race) {
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="track-display">
+            <h3>MAPA DEL TRAZADO</h3>
+            <img src="${race.map}" alt="Mapa de ${race.circuit}" class="circuit-map-img" style="width:100%; max-width:400px; filter:invert(1); margin-top:10px;">
         </div>`;
     document.getElementById('circuit-detail-modal').style.display = "block";
 }
@@ -163,19 +184,14 @@ async function cargarTarjetasPilotos() {
         const response = await fetch('https://api.jolpi.ca/ergast/f1/2026/drivers.json');
         const data = await response.json();
         const drivers = data.MRData.DriverTable.Drivers;
-        grid.innerHTML = '';
-        drivers.forEach(driver => {
-            const card = document.createElement('div');
-            card.className = 'driver-card';
-            card.innerHTML = `
+        grid.innerHTML = drivers.map(driver => `
+            <div class="driver-card" onclick='abrirPerfilPiloto(${JSON.stringify(driver)})'>
                 <div class="driver-number">${driver.permanentNumber || '??'}</div>
                 <div class="driver-info">
                     <h3>${driver.givenName} ${driver.familyName}</h3>
                     <p>${driver.nationality}</p>
-                </div>`;
-            card.onclick = () => abrirPerfilPiloto(driver);
-            grid.appendChild(card);
-        });
+                </div>
+            </div>`).join('');
     } catch (e) { console.error(e); }
 }
 
@@ -195,23 +211,20 @@ function abrirPerfilPiloto(driver) {
 }
 
 // --- INICIALIZACIÓN ---
-
 document.addEventListener('DOMContentLoaded', () => {
     iniciarCuentaRegresiva();
     actualizarTablaF1();
-    cargarTarjetasPilotos(); // Cargamos los pilotos al iniciar
+    actualizarConstructoresF1();
+    cargarTarjetasPilotos();
 
     // Eventos Neumáticos
-    const tyres = document.querySelectorAll('.tyre');
-    tyres.forEach(tyre => {
+    document.querySelectorAll('.tyre').forEach(tyre => {
         tyre.onclick = () => {
             const type = Array.from(tyre.classList).find(c => tyreData[c]);
-            if(tyreData[type]) {
-                document.getElementById("modal-title").innerText = tyreData[type].title;
-                document.getElementById("modal-desc").innerText = tyreData[type].desc;
-                document.getElementById("modal-use").innerText = tyreData[type].use;
-                document.getElementById("tyre-modal").style.display = "block";
-            }
+            document.getElementById("modal-title").innerText = tyreData[type].title;
+            document.getElementById("modal-desc").innerText = tyreData[type].desc;
+            document.getElementById("modal-use").innerText = tyreData[type].use;
+            document.getElementById("tyre-modal").style.display = "block";
         };
     });
 
@@ -221,14 +234,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.close-detail').onclick = () => document.getElementById('circuit-detail-modal').style.display = "none";
     document.querySelector('.close-driver').onclick = () => document.getElementById('driver-modal').style.display = "none";
 
-    // Navegación
+    // Navegación Calendario
     document.getElementById('btn-calendario').onclick = (e) => {
         e.preventDefault();
         cargarCalendario();
         document.getElementById('calendar-modal').style.display = "block";
     };
 
-    // Botón Pilotos (Scroll suave a la sección)
+    // Botón Pilotos (Scroll suave)
     const btnPilotos = document.querySelector('nav ul li:nth-child(3) a');
     if(btnPilotos) {
         btnPilotos.onclick = (e) => {

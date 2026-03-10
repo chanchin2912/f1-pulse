@@ -121,6 +121,7 @@ tr:hover { background: rgba(225, 6, 0, 0.05); }
 }
 .table-wrapper {
     overflow-x: auto; /* Para que sea responsivo en móviles */
+    width: 100%;
     margin: 20px 0;
 }
 
@@ -376,4 +377,79 @@ td strong {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+}
+.team-name {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Colores temáticos para las celdas de puntos de constructores */
+.constructors-section .pts {
+    color: #00d2be; /* Color tipo Mercedes/Petronas para variar del rojo */
+    font-size: 1.2rem;
+}
+
+.constructors-section tr:hover {
+    background: rgba(0, 210, 190, 0.05);
+}
+.team-name {
+    text-shadow: 0 0 5px rgba(225, 6, 0, 0.3);
+    color: #eee;
+}
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre logo y texto */
+}
+
+.team-logo {
+    width: 40px;
+    height: auto;
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.2));
+    background: #fff; /* Fondo blanco sutil porque algunos logos son oscuros */
+    padding: 3px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.team-logo:hover {
+    transform: scale(1.4);
+}
+
+/* Ajuste para que la tabla no se vea apretada */
+td {
+    vertical-align: middle;
+}
+tr:nth-child(1) .pts { color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); } /* Oro */
+tr:nth-child(2) .pts { color: #c0c0c0; } /* Plata */
+tr:nth-child(3) .pts { color: #cd7f32; } /* Bronce */
+.track-display {
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.circuit-map-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(225, 6, 0, 0.2)) invert(1); /* Invert(1) si el mapa es negro y tu web oscura */
+    margin: 10px 0;
+    transition: transform 0.5s ease;
+}
+
+.circuit-map-img:hover {
+    transform: scale(1.05);
+}
+
+.circuit-stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 10px;
 }
