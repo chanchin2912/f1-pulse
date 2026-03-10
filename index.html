@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Pulse | Velocidad Pura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">F1<span>PULSE</span></div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" id="btn-calendario">Calendario</a></li>
+                <li><a href="#" id="btn-pilotos">Pilotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>LA PRÓXIMA CITA</h1>
+            <p>Prepárate para el rugido de los motores.</p>
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><p>Días</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+            </div>
+        </section>
+
+        <section class="tyres-section">
+            <h2>Compuestos de la Semana</h2>
+            <div class="tyres-container">
+                <div class="tyre hard"><span>H</span></div>
+                <div class="tyre medium"><span>M</span></div>
+                <div class="tyre soft"><span>S</span></div>
+            </div>
+        </section>
+
+        <section class="standings">
+            <h2>Campeonato Mundial 2026</h2>
+            <div class="table-wrapper">
+                <table id="drivers-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Piloto</th>
+                            <th>Escudería</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody id="api-data">
+                        <tr><td colspan="4" style="text-align:center;">Calentando motores...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="drivers-grid-section" id="seccion-pilotos">
+            <h2>Parrilla de Salida 2026</h2>
+            <div id="drivers-grid" class="drivers-container">
+                </div>
+        </section>
+    </main>
+
+    <div id="tyre-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="tyre-details">
+                <h2 id="modal-title">Título</h2>
+                <p id="modal-desc">Descripción aquí...</p>
+                <div class="track-info">
+                    <strong>Uso ideal:</strong> <span id="modal-use"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendar-modal" class="modal">
+        <div class="modal-content calendar-content">
+            <span class="close-calendar">&times;</span>
+            <h2>Calendario F1 2026</h2>
+            <div id="race-list" class="race-grid"></div>
+        </div>
+    </div>
+
+    <div id="circuit-detail-modal" class="modal">
+        <div class="modal-content detail-content">
+            <span class="close-detail">&times;</span>
+            <div id="circuit-info"></div>
+        </div>
+    </div>
+
+    <div id="driver-modal" class="modal">
+        <div class="modal-content driver-profile">
+            <span class="close-driver">&times;</span>
+            <div id="driver-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
